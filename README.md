@@ -7,13 +7,19 @@ For Clients:
 
 - POST / (Allows the registration of a new client: name, nif, address, phone, status)
 
+- GET / (View all clients)
+
 For Payment Methods:
 
 - POST / (Allows the registration of a new payment method: name, status)
 
+- GET / (View all payment methods)
+
 For Rooms:
 
 - POST / (Allows the registration of a new room: number, description, price per day, status)
+
+- GET / (View all rooms)
 
 For Reservations:
 
@@ -35,11 +41,7 @@ docker build -t reservations .
 
 ## Run
 
-Run in default port `4000`:
-
-```
-docker run -it -p 4000:4000 reservations
-```
+Default port: `4000`:
 
 ```
 docker compose run reservations npm start
